@@ -3,9 +3,6 @@ const Generator = require('yeoman-generator')
 module.exports = class extends Generator{
     promting(){
         return this.prompt(
-            // this.log(yosay(
-            //     'Welcome to the impressive' + chalk.red('generator-react')+ 'generator'
-            // ))
             [{
                 type:'input',
                 name: 'name',
@@ -42,7 +39,6 @@ module.exports = class extends Generator{
             'src/logo.svg',
             'src/serviceWorker.js',
             'src/setupTests.js'
-
         ]
 
         templates.forEach(item => {
